@@ -1,4 +1,4 @@
-package P1900_1999
+package main
 
 func isCovered(ranges [][]int, left int, right int) bool {
 	// 存储覆盖情况
