@@ -1,4 +1,4 @@
-package P0800_P0899
+package main
 
 func maxIncreaseKeepingSkyline(grid [][]int) int {
 	var x, y [51]int
