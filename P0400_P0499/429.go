@@ -2,12 +2,12 @@ package main
 
 import "fmt"
 
-type Node struct {
+type NTreeNode struct {
 	Val      int
-	Children []*Node
+	Children []*NTreeNode
 }
 
-func dfs(n *Node, level int, ans *[][]int) {
+func dfs(n *NTreeNode, level int, ans *[][]int) {
 	if n == nil {
 		return
 	}
@@ -21,14 +21,14 @@ func dfs(n *Node, level int, ans *[][]int) {
 	}
 }
 
-func levelOrder(root *Node) [][]int {
+func levelOrder(root *NTreeNode) [][]int {
 	var solve [][]int
 	dfs(root, 0, &solve)
 	return solve
 }
 
 func main() {
-	rt := Node{Val: 1}
-	rt.Children = []*Node{{Val: 3}, {Val: 2}, {Val: 4}}
+	rt := NTreeNode{Val: 1}
+	rt.Children = []*NTreeNode{{Val: 3}, {Val: 2}, {Val: 4}}
 	fmt.Printf("%v", levelOrder(&rt))
 }
