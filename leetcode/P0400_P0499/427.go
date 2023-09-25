@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /**
  * Definition for a QuadTree node.
  **/
@@ -55,7 +53,7 @@ func slice2d(grid [][]int, rowStart int, rowEnd int, colStart int, colEnd int) [
 	return newGrid
 }
 
-func main() {
-	grid := [][]int{{1, 1, 0, 0}, {0, 0, 1, 1}, {1, 1, 0, 0}, {0, 0, 1, 1}}
-	fmt.Printf("%v\n", construct(grid))
-}
+// func main() {
+// 	grid := [][]int{{1, 1, 0, 0}, {0, 0, 1, 1}, {1, 1, 0, 0}, {0, 0, 1, 1}}
+// 	fmt.Printf("%v\n", construct(grid))
+// }

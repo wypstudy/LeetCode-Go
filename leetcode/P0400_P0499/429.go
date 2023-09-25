@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type NTreeNode struct {
 	Val      int
 	Children []*NTreeNode
@@ -27,8 +25,8 @@ func levelOrder(root *NTreeNode) [][]int {
 	return solve
 }
 
-func main() {
-	rt := NTreeNode{Val: 1}
-	rt.Children = []*NTreeNode{{Val: 3}, {Val: 2}, {Val: 4}}
-	fmt.Printf("%v", levelOrder(&rt))
-}
+// func main() {
+// 	rt := NTreeNode{Val: 1}
+// 	rt.Children = []*NTreeNode{{Val: 3}, {Val: 2}, {Val: 4}}
+// 	fmt.Printf("%v", levelOrder(&rt))
+// }
