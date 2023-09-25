@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -28,7 +27,7 @@ func selfDividingNumbers(left int, right int) []int {
 	return ans
 }
 
-func main() {
-	fmt.Printf("%v", selfDividingNumbers(1, 22))
-	fmt.Printf("%v", selfDividingNumbers(47, 85))
-}
+// func main() {
+// 	fmt.Printf("%v", selfDividingNumbers(1, 22))
+// 	fmt.Printf("%v", selfDividingNumbers(47, 85))
+// }

@@ -11,7 +11,7 @@ func rotateString(s string, goal string) bool {
 	return false
 }
 
-func main() {
-	println(rotateString("abcde", "cdeab"))
-	println(rotateString("abcde", "abced"))
-}
+// func main() {
+// 	println(rotateString("abcde", "cdeab"))
+// 	println(rotateString("abcde", "abced"))
+// }
